@@ -60,7 +60,7 @@ def binary_search(sorted_list,target,low,high):
     found = False
 
 
-    while low != high:
+    while low <= high:
 
         mid = (low + high)//2 #this is our pivot point, the middle of the list
 
