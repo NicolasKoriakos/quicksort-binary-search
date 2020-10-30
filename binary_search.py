@@ -17,6 +17,16 @@ def _random_even_number_list_generator():
 
     even_numbers_list = [number for number in number_list if number % 2 == 0] 
     # ↑ appends only the even numbers of the list generated above(ps : i'm in love with list comprehension) 
+    
+    while len(even_numbers_list) != lenght:
+
+        #this 'fill' our list untill it gets to the desired length
+
+        number = random.randint(0,100)
+
+        if number % 2 == 0:
+
+            even_numbers_list.append(number)
 
     return even_numbers_list # Final random even number list  (disordered)
 
